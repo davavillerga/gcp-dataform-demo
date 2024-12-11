@@ -1,0 +1,11 @@
+config {
+  type: "table", 
+  columns: {
+    cdi: "El RUT de la EMPRESA pública"
+    nombre: "Nombre de la empresa", // Column descriptions are pushed to BigQuery.
+  }
+}
+
+SELECT CDI, NOMBRE 
+FROM `dlp-demo-384617.pii_dataset.ListadoEmpresasPublicasCL` 
+WHERE NOMBRE LIKE 'EMPRESA%'
