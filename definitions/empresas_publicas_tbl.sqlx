@@ -1,7 +1,7 @@
 config {
   type: "table", 
   columns: {
-    cdi: "El RUT de la EMPRESA pública"
+    cdi: "El RUT de la EMPRESA pública",
     nombre: "Nombre de la empresa", // Column descriptions are pushed to BigQuery.
   }
 }
